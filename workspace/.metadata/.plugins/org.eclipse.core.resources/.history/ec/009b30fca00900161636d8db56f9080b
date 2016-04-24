@@ -1,0 +1,11 @@
+<html>
+
+<head><title>Signup Confirmation Title</title></head>
+
+<body>
+
+	Successful sign up! Welcome ${param.username}!
+	<br/>
+	Age: ${param.age}
+</body>
+</html>
