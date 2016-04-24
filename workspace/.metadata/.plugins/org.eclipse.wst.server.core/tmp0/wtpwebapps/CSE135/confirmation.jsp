@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<%@ page import="com.cse135.jsp.*" %>
+<html>
+	<head>
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel = "stylesheet">
+		<link href="css/styles.css" rel = "stylesheet">
+		<title>Home Page</title>
+	</head>
+	<body>
+	<div class=	"navbar navbar-default navbar-static-top">
+		<div class= "container">
+			<a href="./index.html" class="pull-left"><img src="./img/logo.png"></a>
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+				<div class= "collapse navbar-collapse navHeaderCollapse">
+					<ul class= "nav navbar-nav navbar-right">
+						<li class = "active"><a href= "./index.html">Home</a></li>
+						<li><a href= "./categories.html">Categories</a></li>
+						<li><a href= "./products.html">Products</a></li>
+						<li><a href= "./signup.html">Signup</a></li>
+						<li><a href= "./login.html">Login</a></li>
+					</ul>
+				</div>
+		</div>
+	</div >
+	<div align = "center" class = "jumbotron">
+		<div class = "row">
+			<h1>Confirmation Page</h1>
+	<%
+	for(int i=0; i < FunUtils.boxTest(5); i++){
+		out.println("<br/>NEW BOX HERE");
+	}
+	%>
+		</div>
+	</div>
+	
+	<div class = "navbar navbar-inverse navbar-fixed-bottom">
+		<div class = "container">
+			<p class = "navbar-text pull-left"></p>
+			<!--
+			<a href= "http://www.twitch.tv/esportscollective" 
+			class = "navbar-btn btn-link btn pull-right">Follow us on Twitch!</a>  -->
+		</div>
+	</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+</html>

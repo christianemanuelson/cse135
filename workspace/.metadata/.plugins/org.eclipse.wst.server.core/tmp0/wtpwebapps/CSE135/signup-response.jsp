@@ -15,8 +15,9 @@
 	<br/>
 	here we go:
 	<%
-	for(int i=0; i < FunUtils.boxTest(5); i++)
+	for(int i=0; i < FunUtils.boxTest(5); i++){
 		out.println("<br/>NEW BOX HERE");
+	}
 	%>
 
 </body>
